@@ -47,6 +47,28 @@
 #         break
 #     ChatBox.append(line)
 
-for i in range(1, 10, 1):
-    print(i)
+# for i in range(1, 10, 1):
+#     print(i)
 
+
+# nested for loop
+
+# for i in range(1,9): #outerloop
+#     for k in range(1,i):
+#         print(i,"=>",k, end=" ")
+#     print()
+
+# for i in range(7,14):
+#     for j in range(7,14):
+#         print(i+j, end=" ")
+#     print()
+
+# for i in range(1, 8):
+#     for j in range(2, 8):
+#         print(i * j, end=" ")
+#     print()
+
+for i in range(1,9):
+    for j in range ():
+        print("*", end=" ")
+    print()
