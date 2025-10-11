@@ -31,6 +31,7 @@ matrix = [
     [5, 6]
 ]
 
+
 doubled = [[num * 2 for num in row] for row in matrix]
 print(doubled)
 
