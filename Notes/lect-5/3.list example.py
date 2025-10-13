@@ -25,6 +25,7 @@
 #list methods 
 
 fruits = ["apple", "orange", "kiwi"]
+print(fruits)
 
 # fruits.append("mango")       
 # print(fruits)
@@ -46,8 +47,8 @@ fruits = ["apple", "orange", "kiwi"]
 
 #unpacking in tuple
 
-point = (5, 6)
+# point = (5, 6)
 
-x, y = point
-print("x =", x)   
-print("y =", y) 
+# x, y = point
+# print("x =", x)   
+# print("y =", y) 
