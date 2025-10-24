@@ -1,0 +1,32 @@
+def greeting():
+    print("Hello, nice to meet you!")
+
+def outerFunc(name, callback):
+    print(f"My name is {name}")
+    callback()   
+
+# outerFunc("Kanchana", greeting)
+
+def showAge(age):
+    print(f"I am {age} years old.")
+
+def outerFunc(name, age, callback):
+    print(f"My name is {name}.")
+    callback(age)   # calling the callback function with age as argument
+
+outerFunc("Kanchana", 21, showAge)
+
+def outer(city):   
+    print("This is the outer function.")
+
+    def greet(person):
+        print(f"Hello, {person}! Welcome to {city}.")
+
+    def inner(name):   
+        greet(name)
+        print("This is the inner function.")
+
+    inner("Asha")
+
+outer("Chennai")
+
