@@ -38,7 +38,7 @@ b = {3, 4, 5}
 
 print(a | b)        # {1, 2, 3, 4, 5}   (union)
 print(a & b)        # {3}               (intersection)
-print(a - b)        # {1, 2}            (difference)
+print(a - b)        # {1, 2}            (difference in a)
 print(a ^ b)        # {1, 2, 4, 5}      (symmetric difference)
 
 ```

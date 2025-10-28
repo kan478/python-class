@@ -3,7 +3,7 @@ def greeting():
 
 def outerFunc(name, callback):
     print(f"My name is {name}")
-    callback()   
+    callback  
 
 # outerFunc("Kanchana", greeting)
 
@@ -12,9 +12,9 @@ def showAge(age):
 
 def outerFunc(name, age, callback):
     print(f"My name is {name}.")
-    callback(age)   # calling the callback function with age as argument
+    callback(age+1)   
 
-outerFunc("Kanchana", 21, showAge)
+# outerFunc("Kanchana", 21, showAge)
 
 def outer(city):   
     print("This is the outer function.")
@@ -28,5 +28,18 @@ def outer(city):
 
     inner("Asha")
 
-outer("Chennai")
+# outer("Chennai")
 
+
+def ErrMsg(msg):
+    print(f"Error Message :",msg)
+
+def logMsg(msg):
+    print("log Message :",msg)
+
+def functionPerformance(message,callback):
+    print("recoder of message")
+    callback(message)
+
+functionPerformance("data secured deined",logMsg)
+functionPerformance("data faild",ErrMsg)
