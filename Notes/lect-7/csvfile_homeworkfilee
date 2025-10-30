@@ -1,0 +1,44 @@
+import csv
+
+# n = int(input("Enter number of students: "))
+
+
+data = []
+
+# for i in range(n):
+#      print(f"\nEnter details for student {i+1}:")
+#      name = input("Enter name: ")
+#      age = input("Enter age: ")
+#      grade = input("Enter grade: ")
+#      data.append([name, age, grade])
+
+def createNewFile():
+     with open("grade.csv", "w", newline="") as file:
+          writer = csv.writer(file)
+          writer.writerow(["Name", "Age", "Grade"])
+
+def addListOfStudents():
+     addData =[]
+     name = input("Enter name: ")
+     age = input("Enter age: ")
+     grade = input("Enter grade: ")
+     data.append([name, age, grade])
+     addData.append([name, age, grade])
+     with open("grade.csv", "a", newline="") as file:
+          writer = csv.writer(file)
+          writer.writerows(addData)
+
+createNewFile()
+num = 1
+while num:
+     print("0- close")
+     print("1 - Add students")
+     choice = int(input("Enter your choice : "))
+     if choice == 1:
+          addListOfStudents()
+     else:
+          if choice == 0:
+               num = choice
+               print("Thanks, welcome back")
+          else:
+               num = 1
