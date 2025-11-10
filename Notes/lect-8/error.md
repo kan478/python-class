@@ -62,6 +62,8 @@ You cannot divide by zero!
 try:
     a = int("hello")
 except Exception as e:
+
+    
     print("Error:", e)
 
 # o/p
