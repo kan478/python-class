@@ -44,19 +44,27 @@
 # stud = Student("kanchan",'19',750000,"developer")
 # stud.displayDetails()
 
-class Employee:
-    name=""
-    role="" 
-    years=""
-    def __init__(self):
-        print(f"{self.name}was in the {self.role}for last {self.years}")
-    def __init__(self,name,role,years):
-        self.name = name
-        self.role = role
-        self.years = years
-        print(f"{self.name}was in the {self.role}for last {self.years}")
+# class Employee:
+#     name=""
+#     role="" 
+#     years=""
+#     def __init__(self):
+#         print(f"{self.name}was in the {self.role}for last {self.years}")
+#     def __init__(self,name,role,years):
+#         self.name = name
+#         self.role = role
+#         self.years = years
+#         print(f"{self.name}was in the {self.role}for last {self.years}")
 
 
-EMP= Employee(name ="Sridhar",role ="Human Resource",years ="8 years")
+# EMP= Employee(name ="Sridhar",role ="Human Resource",years ="8 years")
 
-# emp =Employee()
+# # emp =Employee()
+
+class Student:
+    def __init__(self, student_name, student_age):
+        self.student_name = student_name
+        self.student_age = student_age
+
+s1 =    Student("akash",12)
+print(s1.student_name,s1.student_age)
