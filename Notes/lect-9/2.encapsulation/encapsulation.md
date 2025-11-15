@@ -33,7 +33,6 @@ class BankAccount:
 class BankAccount:
     def __init__(self, balance):
         self.balance = balance  # public variable
-
 account = BankAccount(1000)
 print(account.balance)   # Anyone can access
 account.balance = -500   # ❌ Wrong, unsafe

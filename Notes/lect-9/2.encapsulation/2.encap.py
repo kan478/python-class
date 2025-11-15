@@ -34,6 +34,47 @@ class BankAccount:
         return self.__balance
         
     
-acc1 = BankAccount(100000)
-acc1.deposit(-68568)
-print(acc1.get_balance())
+# acc1 = BankAccount(100000)
+# acc1.deposit(-68568)
+# print(acc1.get_balance())
+
+
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            print(f"Withdrawn: {amount}")
+        else:
+            print("Insufficient amount")
+
+    def get_balance(self):
+        return self.balance
+
+
+# acc1 = BankAccount(500000)
+# acc1.withdraw(300000)
+# print("Remaining Balance:", acc1.get_balance())
+
+class Student:
+    def __init__(self, name, marks):   # ✅ Fixed constructor name
+        self.__name = name
+        self.__marks = marks
+
+    def set_marks(self, marks):
+        if 0 <= marks <= 100:
+            self.__marks = marks
+        else:
+            print("Invalid marks!")
+
+    def get_marks(self):
+        return self.__marks
+
+
+s1 = Student("Kishore", 100)
+print(s1.get_marks())  
+s1.set_marks(98)
+print(s1.get_marks())   
+s1.set_marks(-1)      
